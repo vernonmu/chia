@@ -37,25 +37,25 @@ angular.module('app').service('mainSrv', function($http) {
     })
   }
 
-  // this.getConsultants = function(){
-  //   return $http.get('/api.php/checkin/getconsultants')
-  //     .then(function(response){
-  //       var temp = response.data
-  //
-  //       var x = 0;
-  //       for (var i = 0; i < response.data.length; i++) {
-  //         if (temp[i].isSpanish === 1) {
-  //           console.log(temp[i].givenName, temp[i].familyName);
-  //           x++
-  //           temp[i].spanishImg = 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/2000px-Pok%C3%A9_Ball_icon.svg.png'
-  //           // console.log(temp[i]);
-  //         }
-  //       }
-  //       console.log(x);
-  //       return {temp}
-  //     })
-  //
-  // }
+  this.getConsultants = function(){
+    return $http.get('/api.php/checkin/getconsultants')
+      // .then(function(response){
+      //   var temp = response.data
+      //
+      //   var x = 0;
+      //   for (var i = 0; i < response.data.length; i++) {
+      //     if (temp[i].isSpanish === 1) {
+      //       console.log(temp[i].givenName, temp[i].familyName);
+      //       x++
+      //       temp[i].spanishImg = 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/2000px-Pok%C3%A9_Ball_icon.svg.png'
+      //       // console.log(temp[i]);
+      //     }
+      //   }
+      //   console.log(x);
+      //   return {temp}
+      // })
+
+  }
 
   this.checkinConsultant = function(person) {
     console.log('we are here now');

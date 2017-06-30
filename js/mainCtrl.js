@@ -15,6 +15,18 @@ angular.module('app').controller('mainCtrl', function($scope, mainSrv) {
       $(event.target).addClass('text-success')
       consultant.isCheckedIn = 1
     }
+
+
+    var updateRecord = function(consultant) {
+      mainSrv.checkinConsultant(consultant)
+      mainSrv.getConsultants()
+      // .then(function(response){
+      //   return response
+      // })
+    }
+
+    updateRecord(consultant)
+
   }
 
   // get events for events view
@@ -28,14 +40,15 @@ angular.module('app').controller('mainCtrl', function($scope, mainSrv) {
 
   $scope.getEvents()
 
-  // $scope.getConsultants = function() {
-  //   mainSrv.getConsultants()
-  //   .then(function(response){
-  //     console.log(response)
-  //   })
-  // }
-  //
-  // $scope.getConsultants()
+  $scope.getConsultants = function() {
+    mainSrv.getConsultants()
+    .then(function(response){
+      console.log(response)
+      $scope.consultants = response.data
+    })
+  }
+
+  $scope.getConsultants()
 
 
 })

@@ -24,7 +24,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr ng-repeat="person in $ctrl.eventPageData | orderBy: 'id' | filter:search ">
+      <tr ng-repeat="person in $ctrl.eventPageData | orderBy: 'id' | filter:search" ng-if="person.isCheckedIn === 0">
         <td class="text-center td-event">
           <i style="color: #ccc;"
             ng-class="{'text-success' : person.isCheckedIn}"
