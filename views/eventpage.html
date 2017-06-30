@@ -1,0 +1,55 @@
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2 col-sm-12">
+    <div class="input-group">
+        <input
+          class="form-control"
+          type="search"
+          value=""
+          ng-model="search"
+          placeholder="Enter name"
+        >
+        <span class="input-group-btn">
+          <button class="btn btn-secondary" type="button">Search</button>
+        </span>
+    </div>
+  </div>
+</div>
+<div class="row" style="padding-top:35px;">
+  <table class="table table-bordered" style="background: white;">
+    <thead>
+      <tr>
+        <th class="text-center" style="font-size:24px;width:50%;">Check-In</th>
+        <th class="text-center">Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="person in $ctrl.eventPageData | orderBy: 'id' | filter:search ">
+        <td class="text-center td-event">
+          <i style="color: #ccc;"
+            ng-class="{'text-success' : person.isCheckedIn}"
+            class="fa fa-check-circle fa-4x"
+            aria-hidden="true"
+            ng-click="activeButton($event, person)"></i>
+        </td>
+
+        <td class="text-center td-event" >
+          {{person.givenName}} {{person.familyName}}
+          <span ng-if="person.spanishImg" class="text-center">
+            <br>
+            <small>
+              <img ng-src="{{person.spanishImg}}">
+            </small>
+          </span>
+          <span ng-if="person.jaImg" class="text-center">
+            <br>
+            <small>
+              <img ng-src="{{person.jaImg}}">
+            </small>
+          </span>
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>

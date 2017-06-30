@@ -1,0 +1,119 @@
+@font-face {
+	font-family: "Energy";
+	src: url("../rsrc/font/energy/energythin.woff2") format("woff2"),
+		 url("../rsrc/font/energy/energythin.woff") format("woff");
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Energy";
+	src: url("../rsrc/font/energy/energythin-italic.woff2") format("woff2"),
+		 url("../rsrc/font/energy/energythin-italic.woff") format("woff");
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Energy";
+	src: url("../rsrc/font/energy/energylight.woff2") format("woff2"),
+		 url("../rsrc/font/energy/energylight.woff") format("woff");
+	font-weight: 200;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Energy";
+	src: url("../rsrc/font/energy/energylight-italic.woff2") format("woff2"),
+		 url("../rsrc/font/energy/energylight-italic.woff") format("woff");
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Energy";
+	src: url("../rsrc/font/energy/energybook.woff2") format("woff2"),
+		 url("../rsrc/font/energy/energybook.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Energy";
+	src: url("../rsrc/font/energy/energybook-italic.woff2") format("woff2"),
+		 url("../rsrc/font/energy/energybook-italic.woff") format("woff");
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Energy";
+	src: url("../rsrc/font/energy/energyregular.woff2") format("woff2"),
+		 url("../rsrc/font/energy/energyregular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Energy";
+	src: url("../rsrc/font/energy/energyregular-italic.woff2") format("woff2"),
+		 url("../rsrc/font/energy/energyregular-italic.woff") format("woff");
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Energy";
+	src: url("../rsrc/font/energy/energymedium.woff2") format("woff2"),
+		 url("../rsrc/font/energy/energymedium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Energy";
+	src: url("../rsrc/font/energy/energymedium-italic.woff2") format("woff2"),
+		 url("../rsrc/font/energy/energymedium-italic.woff") format("woff");
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Energy";
+	src: url("../rsrc/font/energy/energybold.woff2") format("woff2"),
+		 url("../rsrc/font/energy/energybold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Energy";
+	src: url("../rsrc/font/energy/energybold-italic.woff2") format("woff2"),
+		 url("../rsrc/font/energy/energybold-italic.woff") format("woff");
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Energy";
+	src: url("../rsrc/font/energy/energyheavy.woff2") format("woff2"),
+		 url("../rsrc/font/energy/energyheavy.woff") format("woff");
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Energy";
+	src: url("../rsrc/font/energy/energyheavy-italic.woff2") format("woff2"),
+		 url("../rsrc/font/energy/energyheavy-italic.woff") format("woff");
+	font-weight: 800;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Energy";
+	src: url("../rsrc/font/energy/energyblack.woff2") format("woff2"),
+		 url("../rsrc/font/energy/energyblack.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Energy";
+	src: url("../rsrc/font/energy/energyblack-italic.woff2") format("woff2"),
+		 url("../rsrc/font/energy/energyblack-italic.woff") format("woff");
+	font-weight: 900;
+	font-style: italic;
+}

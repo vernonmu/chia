@@ -1,0 +1,23 @@
+<div class="card">
+  <div class="card-block">
+    <h1>All Events</h1>
+    <p>Click an event from the list below to check in a registrant.</p>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Event Name</th>
+          <th># Registered</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="event in events">
+          <th scope="row">{{$index + 1}}</th>
+          <td><a ui-sref="event({event:event.event})">{{event.event}}</a></td>
+          <td><a ui-sref="event({event:event.event})">{{event.count}}</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>

@@ -1,0 +1,65 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0 0 175px;
+}
+
+header {
+  margin-top:15px;
+}
+
+.table {
+  font-size: 16px;
+}
+
+
+nav {
+  border-bottom: 1px solid #ccc;
+}
+
+.table .td-event img {
+  max-width:30px;
+}
+
+.table .td-event {
+  padding:35px 10px;
+
+  text-transform: capitalize;
+}
+
+.table .td-event span {
+  padding-bottom:20px;
+}
+
+footer {
+  margin-top: 15px;
+  background: #333;
+  padding-bottom:20px;
+  text-align: center;
+  text-transform: capitalize;
+  overflow: hidden;
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  padding-top:5%;
+
+}
+
+p {
+  margin: 0;
+}
+
+.title {
+  color: #666;
+}
+
+
+@media (max-width: 768px) {
+  .col-md-6 {
+    margin-bottom: 25px;
+  }
+}

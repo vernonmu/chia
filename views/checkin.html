@@ -1,0 +1,64 @@
+<div class="card">
+  <div class="card-block">
+    <h1>Consultant Check-In</h1>
+
+        <div
+          ng-show="showme"
+          class="alert alert-success alert-dismissible fade show"
+          role="alert"
+        >
+          <button
+            type="button"
+            class="close"
+            data-dismiss="alert"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <strong>Holy guacamole!</strong> You successfully checked-in!
+        </div>
+
+        <div class="col-md-8 col-md-offset-2 col-sm-12">
+          <div class="input-group">
+              <input
+                class="form-control"
+                type="search"
+                value=""
+                ng-model="search"
+                placeholder="Enter name"
+              >
+              <span class="input-group-btn">
+                <button class="btn btn-secondary" type="button">Search</button>
+              </span>
+          </div>
+        </div>
+
+
+        <br>
+
+        <table class="table table-bordered">
+          <tbody>
+            <tr ng-repeat="consultant in consultants | filter:search">
+              <td>
+                <p style="font-size:1.5em;">
+                  {{consultant.givenName}} {{consultant.familyName}}
+                </p>
+                <p class="title">
+                  Consultant #: {{consultant.cNumber}}
+                </p>
+                <span class="badge badge-pill badge-default">
+                  {{consultant.event}}&nbsp;
+                </span>
+              </td>
+              <td class="align-middle" style="width: 50%; text-align:center;">
+                <i style="color: #ccc;"
+                  ng-class="{'text-success' : consultant.isCheckedIn}"
+                  class="fa fa-check-circle fa-4x"
+                  aria-hidden="true"
+                  ng-click="activeButton($event, consultant)"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
